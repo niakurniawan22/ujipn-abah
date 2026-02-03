@@ -12,7 +12,7 @@ body {
 }
 
 /* LAYOUT */
-.container {
+.container-main {
     display: flex;
     min-height: 100vh;
 }
@@ -137,7 +137,7 @@ body {
     overflow: hidden;
     padding: 20px;
     border-radius: 14px;
-    color: #fff;
+    color: #fff !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
@@ -147,7 +147,7 @@ body {
     position: absolute;
     right: 15px;
     bottom: 10px;
-    font-family: "Font Awesome 6 Free";
+    font-family: "Font Awesome 7 Free";
     font-weight: 900;
     font-size: 70px;
     color: rgba(255, 255, 255, 0.18);
@@ -199,7 +199,7 @@ table {
 
 th,
 td {
-    padding: 12px;
+    padding: 12px !important;
     font-size: 14px;
     border-bottom: 1px solid #e5e7eb;
 }
@@ -231,7 +231,7 @@ th {
     display: inline-block;
     margin: 20px 0;
     padding: 14px 30px;
-    background: linear-gradient(135deg, #22c55e, #16a34a);
+    /* background: linear-gradient(135deg, #22c55e, #16a34a); */
     color: #fff;
     border-radius: 12px;
     text-decoration: none;
