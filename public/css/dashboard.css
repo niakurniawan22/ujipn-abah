@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #eef2f7, #f8fafc);
+}
+
+/* LAYOUT */
+.container-main {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: linear-gradient(180deg, #0f172a, #1e293b);
+    color: #fff;
+    padding: 25px 20px;
+}
+.sidebar .fa-solid {
+    width: 20px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 18px;
+}
+
+.sidebar a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sidebar a:hover {
+    color: #fff;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    padding: 30px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: #e4e9f7;
+    padding: 15px;
+}
+
+.header h1 {
+    font-size: 20px;
+    color: #1e293b;
+}
+
+/* HEADER MENU DASHBOARD ADMIN */
+.user-menu {
+    position: relative;
+}
+
+.user-trigger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #333;
+}
+
+.user-trigger i {
+    font-size: 20px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 37px;
+    right: -15px;
+    width: 170px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 100;
+}
+
+.dropdown a,
+.dropdown button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 15px;
+    width: 100%;
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dropdown a:hover,
+.dropdown button:hover {
+    background-color: #f2f2f2;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 14px;
+    color: #fff !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ICON BACKGROUND */
+.card::after {
+    content: attr(data-icon);
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.18);
+    pointer-events: none;
+}
+
+/* WARNA CARD */
+.blue {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+.orange {
+    background: linear-gradient(135deg, #fb923c, #f97316);
+}
+.green {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+.teal {
+    background: linear-gradient(135deg, #14b8a6, #0d9488);
+}
+
+.card h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card p {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+/* TABLE */
+.table-box {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.table-box h3 {
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px !important;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    text-align: left;
+    color: #475569;
+}
+
+.status {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.menunggu {
+    background: #f97316;
+}
+.diproses {
+    background: #22c55e;
+}
+.selesai {
+    background: #14b8a6;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 14px 30px;
+    /* background: linear-gradient(135deg, #22c55e, #16a34a); */
+    color: #fff;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 10px 20px rgba(34, 197, 94, 0.4);
+}
